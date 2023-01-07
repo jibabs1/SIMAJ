@@ -1,6 +1,7 @@
 import Head from "next/head";
 import About from "../components/About";
 import CTA from "../components/CTA";
+import FAQ from "../components/FAQ";
 import Features from "../components/Features";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -17,16 +18,20 @@ export default function Home() {
 
       <Header />
       {/* <main className="p-4 h-screen bg-[rgb(36,36,36)] snap-y snap-mandatory _overflow-scroll"> */}
-      <main className="p-4 h-screen bg-white snap-y snap-mandatory _overflow-scroll">
-        <div style={{ maxWidth: 1235 }} className="mx-auto">
-          {/* <Hero /> */}
-          <section id="hero" className="_snap-center"></section>
+      <main className="h-screen bg-white">
+        <section id="hero" className="_snap-center">
+          <Hero />
+        </section>
 
-          {/* About */}
+        <div style={{ maxWidth: 1235 }} className="mx-auto pb-20 p-4 lg:p-0">
           <About />
+          {/* About */}
 
           {/* Features */}
           <Features />
+
+          {/* FAQ */}
+          <FAQ />
 
           {/* Call to action */}
           <CTA />

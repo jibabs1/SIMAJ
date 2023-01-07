@@ -26,7 +26,7 @@ export default function Header() {
             transition={{ duration: 1.5 }}
           >
             <Link
-              href="tel:5541251234"
+              href="tel:09063745975"
               className="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline"
             >
               (090) 63745975
