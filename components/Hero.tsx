@@ -18,7 +18,7 @@ export default function Hero({}: Props) {
           className="mx-auto py-10 lg:py-20 px-10 lg:px-0"
           style={{ maxWidth: 1232 }}
         >
-          <div className="grid grid-cols-2 lg:grid-col-3">
+          <div className="grid grid-cols-1 md:grid-col-2 lg:grid-col-3">
             <div className="space-y-5">
               <h1 className="text-4xl text-white">
                 A Community Management Software.
