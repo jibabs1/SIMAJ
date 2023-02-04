@@ -18,10 +18,11 @@ export default function Hero({}: Props) {
           className="mx-auto py-10 lg:py-20 px-10 lg:px-0"
           style={{ maxWidth: 1232 }}
         >
-          <div className="grid grid-cols-1 md:grid-col-2 lg:grid-col-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             <div className="space-y-5">
-              <h1 className="text-4xl text-white">
-                A Community Management Software.
+              <h1 className="text-5xl text-white">
+                {/* A Community Management Software. */}
+                Reshaping the future of gated community security
               </h1>
 
               <h2 className="text-white text-lg">
@@ -31,7 +32,7 @@ export default function Hero({}: Props) {
 
               <div className="mt-10 pt-3 inline-flex rounded-md shadow">
                 <a
-                  href="#"
+                  href="mailto:info@trigonaltech.com"
                   className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50"
                 >
                   Schedule Demo

@@ -10,7 +10,7 @@ const features = [
   {
     name: "Security Management",
     description:
-      "Ensure that every person, package or vehicle entering the community is authorised by a resident. Effective secuity measures can be convenient, too!",
+      "Ensure that every person, package or vehicle entering the community is authorised by a resident. Effective security measures can be convenient, too!",
     icon: LockClosedIcon,
   },
   {
@@ -22,13 +22,13 @@ const features = [
   {
     name: "Data Management",
     description:
-      "This gives you the estate/community admin a dashboard to see and monitor data arounds the estate allowing for a more informed decision taking.",
+      "This gives you the estate/community admin a dashboard to see and monitor data arounds the estate allowing for a more informed decision making.",
     icon: CircleStackIcon,
   },
   {
     name: "Bill Payment",
     description:
-      "Biils like estate dues, electricity bill and so on can be easily paid via the app. This allows for tracking and easy reconcilliation",
+      "Recurring bills like estate dues, electricity bills and so on can be easily paid via the app. This allows for tracking and easy reconciliation",
     icon: BanknotesIcon,
   },
 ];

@@ -98,23 +98,22 @@ export default function FAQ({}: Props) {
           <Accordion.Content>
             <p className="mb-2 text-gray-500 dark:text-gray-400">
               Maigadi has 3-pillar service delivery structure which includes;
-              <ul>
-                <li>
-                  Dedicated Relationship Managers responsible for onboarding
-                  coordination, product training and real-time resolution
-                  handling
-                </li>
-                <li>
-                  On-field officers for individual pin codes manage stakeholder
-                  and guard training sessions and are available 24X7 on-call or
-                  WhatsApp
-                </li>
-                <li>
-                  4-hr turnaround time for resident query and 2-hr for an onsite
-                  visit
-                </li>
-              </ul>
             </p>
+            <ul>
+              <li>
+                Dedicated Relationship Managers responsible for onboarding
+                coordination, product training and real-time resolution handling
+              </li>
+              <li>
+                On-field officers for individual pin codes manage stakeholder
+                and guard training sessions and are available 24X7 on-call or
+                WhatsApp
+              </li>
+              <li>
+                4-hr turnaround time for resident query and 2-hr for an onsite
+                visit
+              </li>
+            </ul>
           </Accordion.Content>
         </Accordion.Panel>
       </Accordion>
