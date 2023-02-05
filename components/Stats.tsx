@@ -4,10 +4,10 @@ type Props = {};
 
 export default function Stats({}: Props) {
   return (
-    <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
       <div className="border-gray-200 dark:border-gray-600">
         <div
-          className="_p-4 bg-white rounded-lg _md:p-8 dark:bg-gray-800"
+          className="_p-4 bg-red-50 rounded-lg _md:p-8 dark:bg-gray-800"
           id="stats"
           role="tabpanel"
           aria-labelledby="stats-tab"
