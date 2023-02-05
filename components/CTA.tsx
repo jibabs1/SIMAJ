@@ -40,7 +40,10 @@ export default function CTA({}: Props) {
   };
 
   return (
-    <div className="bg-gray-50 px-6 lg:flex lg:items-center lg:justify-between py-8 lg:py-16 lg:px-8">
+    <div
+      className="bg-gray-50 px-6 lg:flex lg:items-center lg:justify-between py-8 lg:py-16 lg:px-8"
+      id="CTA"
+    >
       <div className="_mx-auto _max-w-7xl ">
         <div className="mb-5">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

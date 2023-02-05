@@ -35,7 +35,10 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="_bg-white py-24 sm:py-32 lg:py-20 bg-gray-50 my-20">
+    <div
+      className="_bg-white py-24 sm:py-32 lg:py-20 bg-gray-50 my-20"
+      id="Features"
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="sm:text-center">
           <h2 className="text-2xl font-semibold leading-8 text-indigo-600">

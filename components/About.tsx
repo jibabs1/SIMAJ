@@ -26,7 +26,10 @@ export default function About({}: Props) {
   });
 
   return (
-    <div className="bg-[#241C58] rounded-lg  grid grid-cols-2 relative">
+    <div
+      className="bg-[#241C58] rounded-lg  grid grid-cols-2 relative"
+      id="About"
+    >
       <div className="col-span-2 md:col-span-1 items-center p-14 justify-center text-3xl gap-y-7">
         <h2 className="font-bold tracking-tight text-white sm:text-4xl">
           <span className="block">Why maigadi?</span>

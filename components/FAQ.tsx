@@ -6,10 +6,10 @@ type Props = {};
 
 export default function FAQ({}: Props) {
   return (
-    <div className="bg-white mb-20">
+    <div className="bg-white mb-20" id="FAQ">
       <div className="sm:text-center mb-5">
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          FAQs
+          Frequently asked questions
         </p>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
           Maigadi app has an extensive feature set, simplifying the way you

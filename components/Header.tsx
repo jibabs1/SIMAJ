@@ -61,7 +61,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#About"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
                   About
@@ -69,7 +69,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#Features"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
                   Features
@@ -77,7 +77,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#FAQ"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
                   FAQs
@@ -86,7 +86,7 @@ export default function Header() {
 
               <li className="hidden md:block">
                 <a
-                  href="#"
+                  href="#CTA"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
                   Download
