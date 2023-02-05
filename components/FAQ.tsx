@@ -117,14 +117,14 @@ export default function FAQ({}: Props) {
           </Accordion.Content>
         </Accordion.Panel>
       </Accordion>
-      <div className="text-center mt-4">
+      {/* <div className="text-center mt-4">
         <Link
           href="/faq"
           className="text-center text-lg font-semibold cursor-pointer"
         >
           See more
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }

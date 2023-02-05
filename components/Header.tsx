@@ -84,7 +84,7 @@ export default function Header() {
                 </a>
               </li>
 
-              <li>
+              <li className="hidden md:block">
                 <a
                   href="#"
                   className="text-gray-900 dark:text-white hover:underline"

@@ -5,6 +5,9 @@ import FAQ from "../components/FAQ";
 import Features from "../components/Features";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Plan from "../components/Plan";
+import Stats from "../components/Stats";
+import Testimony from "../components/Testimony";
 
 export default function Home() {
   return (
@@ -24,16 +27,21 @@ export default function Home() {
         </section>
 
         <div style={{ maxWidth: 1235 }} className="mx-auto pb-20 p-4 lg:p-0">
+          <div className="-mt-36 mb-20">
+            <Stats />
+          </div>
           <About />
-          {/* About */}
 
-          {/* Features */}
           <Features />
 
-          {/* FAQ */}
+          {/* <Stats /> */}
+
           <FAQ />
 
-          {/* Call to action */}
+          <Plan />
+
+          <Testimony />
+
           <CTA />
 
           {/* Contact us */}

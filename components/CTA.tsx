@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
 import ClipLoader from "react-spinners/ClipLoader";
+import Image from "next/image";
+import playstore from "../public/playstore.png";
+import appstore from "../public/appstore.png";
 
 type Props = {};
 
@@ -27,9 +30,12 @@ export default function CTA({}: Props) {
     };
 
     var response = await axios.post("http://localhost:3001/api/sendMail", data);
-    if (response.data) {
+    if (response.status == 200) {
       setIsLoading(false);
-      setData(response.data.result);
+      setData("Thank you for reaching out. We will be in touch shortly");
+    } else {
+      setIsLoading(false);
+      setData("Could not submit. Please try again.");
     }
   };
 
@@ -38,29 +44,35 @@ export default function CTA({}: Props) {
       <div className="_mx-auto _max-w-7xl ">
         <div className="mb-5">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            <span className="block">Ready to use?</span>
+            <span className="block">Join our happy customers</span>
             <span className="block text-indigo-600">Schedule a demo</span>
           </h2>
         </div>
 
-        {/* <div className="mt-5 mb-5 flex _lg:mt-0 lg:flex-shrink-0">
-          <div className="inline-flex rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
-            >
-              Get started
-            </a>
-          </div>
-          <div className="ml-3 inline-flex rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50"
-            >
-              Learn more
-            </a>
-          </div>
-        </div> */}
+        <div className="mt-10 flex space-x-3">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.trigonal.maigadi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src={playstore}
+              alt="Banner"
+              className="w-[120px] h-[50px] object-contain mb-5"
+            />
+          </a>
+          <a
+            href="https://apps.apple.com/ng/app/maigadi/id1620396384"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src={appstore}
+              alt="Banner"
+              className="w-[120px] h-[50px] object-contain mb-5"
+            />
+          </a>
+        </div>
       </div>
 
       <div className="flex">
@@ -81,6 +93,7 @@ export default function CTA({}: Props) {
               ref={role}
               required
             >
+              <option value="">Role</option>
               <option value="Resident">Resident</option>
               <option value="Realtor">Realtor</option>
               <option value="Builder">Builder</option>
@@ -118,7 +131,7 @@ export default function CTA({}: Props) {
               ref={state}
               required
             >
-              <option>State</option>
+              <option value="">State</option>
               <option value="Abuja">Abuja</option>
               <option value="Lagos">Lagos</option>
             </select>
@@ -135,7 +148,7 @@ export default function CTA({}: Props) {
             )}
           </button>
           {data && (
-            <p className="mt-2 bg-green-500 w-32 p-1 justify-center items-center text-center">
+            <p className="mt-2 bg-green-500 w-1/2 p-1 justify-center items-center text-center">
               {data}
             </p>
           )}

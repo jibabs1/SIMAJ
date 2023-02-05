@@ -7,15 +7,15 @@ export default function handler(req, res) {
     port: 587,
     host: "smtp.office365.com",
     auth: {
-      user: "yusuf.a@agtrinex.com",
-      pass: "Cyberbot@1",
+      user: process.env.MAIL_USERNAME,
+      pass: process.env.MAIL_PASSWORD,
     },
     secure: false,
   });
 
   const mailData = {
     from: "Maigadi",
-    to: "info@trigonaltech.com",
+    to: "info@trigonaltech.com,yusuf.a@agtrinex.com",
     subject: `Maigadi enquiry from ${req.body.name}`,
     text: "New sign up request from: " + req.body.email,
     html: `
