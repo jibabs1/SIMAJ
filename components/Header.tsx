@@ -48,24 +48,7 @@ export default function Header() {
                   href="#Features"
                   className="text-gray-900 dark:text-white hover:underline"
                 >
-                  Features
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#FAQ"
-                  className="text-gray-900 dark:text-white hover:underline"
-                >
-                  FAQs
-                </a>
-              </li>
-
-              <li className="hidden md:block">
-                <a
-                  href="#CTA"
-                  className="text-gray-900 dark:text-white hover:underline"
-                >
-                  Download
+                  Services
                 </a>
               </li>
             </ul>

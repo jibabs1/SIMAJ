@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Banner from "../public/banner.png";
+import Banner from "../public/home-banner3.jpg";
 import { useTypewriter } from "react-simple-typewriter";
 
 type Props = {};
@@ -58,8 +58,12 @@ export default function About({}: Props) {
       </div>
       <div className="hidden md:block md:col-span-1 pt-14 absolute right-0 bottom-0">
         <Image
-          src={Banner}
-          className="w-full h-60 object-contain"
+          src={"/home-banner3.jpg"}
+          //src={Banner}
+          width={305}
+          height={300}
+          // className="w-full h-60 object-contain"
+          className="overflow-hidden rounded-tr-lg rounded-br-lg"
           alt="banner"
         />
       </div>

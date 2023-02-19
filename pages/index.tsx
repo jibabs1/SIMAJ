@@ -1,14 +1,12 @@
 import Head from "next/head";
 import About from "../components/About";
 import CTA from "../components/CTA";
-import FAQ from "../components/FAQ";
-import Features from "../components/Features";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import Plan from "../components/Plan";
 import Stats from "../components/Stats";
-import Testimonial from "../components/Testimonial";
+import Vision from "../components/Vision";
+import Services from "../components/Services";
 
 export default function Home() {
   return (
@@ -32,15 +30,8 @@ export default function Home() {
             <Stats />
           </div>
           <About />
-
-          <Features />
-
-          <FAQ />
-
-          <Plan />
-
-          <Testimonial />
-
+          <Vision />
+          <Services />
           <CTA />
         </div>
         <Footer />

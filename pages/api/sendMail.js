@@ -15,15 +15,14 @@ export default function handler(req, res) {
 
   const mailData = {
     from: "Maigadi",
-    to: "info@trigonaltech.com,yusuf.a@agtrinex.com",
-    subject: `Maigadi enquiry from ${req.body.name}`,
-    text: "New sign up request from: " + req.body.email,
+    to: "info@simajonline.com,whosyusuf@gmail.com",
+    subject: `SIMAJ enquiry from ${req.body.name}`,
+    text: "Request from " + req.body.email,
     html: `
     <p>Name: ${req.body.name}</p>
     <p>Email: ${req.body.email}</p>
-    <p>phone: ${req.body.phone}</p>
-    <p>State: ${req.body.state}</p>
-    <p>Role: ${req.body.role}</p>
+    <br>
+    <p>Role: ${req.body.message}</p>
     `,
   };
 
