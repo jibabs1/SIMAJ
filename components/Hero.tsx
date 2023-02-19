@@ -1,20 +1,16 @@
-import Image from "next/image";
 import React from "react";
-import Logo from "../public/residential.jpg";
-import playstore from "../public/playstore.png";
-import appstore from "../public/appstore.png";
 
 type Props = {};
 
 export default function Hero({}: Props) {
   return (
     <div
-      className="bg-black w-full h-[500px] mb-20"
-      style={{ backgroundImage: `url('/residential.jpg')` }}
+      className="bg-black w-full h-[500px] mb-20 bg-cover bg-no-repeat bg-bottom"
+      style={{ backgroundImage: `url('/home-banner2.jpg')` }}
     >
       <div
         className="w-full h-full md:px-5"
-        style={{ backgroundColor: "rgba(0,0,0,0.7)" }}
+        style={{ backgroundColor: "rgba(0,0,0,0.3)" }}
       >
         <div
           className="mx-auto py-10 lg:py-20 px-10 lg:px-0"
@@ -24,47 +20,25 @@ export default function Hero({}: Props) {
             <div className="space-y-5">
               <h1 className="text-3xl md:text-4xl lg:text-5xl text-white">
                 {/* A Community Management Software. */}
-                Reshaping the future of gated community security
+                Reshaping the future of specialized services
               </h1>
 
               <h2 className="text-white text-lg">
-                Designed for community managers to expeditiously manage gated,
-                residential communities and villas.
+                SIMAJ Engineering and Technical Services Limited is made up of a
+                comprehensive team of engineers, medical doctors, scientists,
+                fund managers and other professionals who overtime have proved
+                to be the best in service delivery in terms of speed and quality
+                in the country today
               </h2>
 
-              <div className="mt-10 pt-3 inline-flex rounded-md shadow">
+              {/* <div className="mt-10 pt-3 inline-flex rounded-md shadow">
                 <a
                   href="mailto:info@trigonaltech.com"
                   className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50"
                 >
                   Schedule Demo
                 </a>
-              </div>
-
-              <div className="mt-10 flex space-x-3">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.trigonal.maigadi"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Image
-                    src={playstore}
-                    alt="Banner"
-                    className="w-[120px] h-[50px] object-contain mb-5"
-                  />
-                </a>
-                <a
-                  href="https://apps.apple.com/ng/app/maigadi/id1620396384"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Image
-                    src={appstore}
-                    alt="Banner"
-                    className="w-[120px] h-[50px] object-contain mb-5"
-                  />
-                </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

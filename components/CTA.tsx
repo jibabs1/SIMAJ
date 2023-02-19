@@ -2,8 +2,6 @@ import React, { useRef, useState } from "react";
 import axios from "axios";
 import ClipLoader from "react-spinners/ClipLoader";
 import Image from "next/image";
-import playstore from "../public/playstore.png";
-import appstore from "../public/appstore.png";
 
 type Props = {};
 
@@ -50,31 +48,6 @@ export default function CTA({}: Props) {
             <span className="block">Join our happy customers</span>
             <span className="block text-indigo-600">Schedule a demo</span>
           </h2>
-        </div>
-
-        <div className="mt-10 flex space-x-3">
-          <a
-            href="https://play.google.com/store/apps/details?id=com.trigonal.maigadi"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image
-              src={playstore}
-              alt="Banner"
-              className="w-[120px] h-[50px] object-contain mb-5"
-            />
-          </a>
-          <a
-            href="https://apps.apple.com/ng/app/maigadi/id1620396384"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image
-              src={appstore}
-              alt="Banner"
-              className="w-[120px] h-[50px] object-contain mb-5"
-            />
-          </a>
         </div>
       </div>
 

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Maigadi</title>
+        <title>SIMAJ Enigeering AND Technical Services Limited</title>
         <meta name="description" content="Gated estates security solution" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.png" />
